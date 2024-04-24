@@ -1,0 +1,88 @@
+﻿*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap');
+
+body {
+    font-family: 'Sulphur Point', sans-serif;
+    background-color: #dbfad1;
+	margin:10px;
+}
+
+main {
+    background-color: #FFFAF2;
+    padding:15px;
+    margin:5px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+
+h2 {
+    font-size: 16pt;
+    text-decoration: underline;
+    text-decoration-color: #21570f;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+.izpis {
+    padding: 11px;
+    border-bottom:#21570f 2px solid;
+    width: 340px;
+}
+
+a {
+    margin: 10px;
+    text-decoration: none;
+    color:black;
+    border-bottom:#21570f 1px solid;
+}
+
+a:visited {
+    color:black;
+}
+
+input {
+    border: 1px solid #707070;
+    padding:9px;
+}
+
+button {
+    border: solid black 1px;
+    width: 200px;
+    background-color: #adebad;
+    padding: 5px;
+    font-size: 11pt;
+    margin-bottom:10px;
+}
+
+.pocisti {
+    background-color: #b88f61;
+}
+
+button a {
+    border:none;
+}
+
+
+
+ 
+
+  @media (min-width: 601px) and (max-width: 768px){
+  }
+    
+   
+@media (max-width: 600px) {
+   
+}
+
+   
+   

@@ -1,0 +1,448 @@
+﻿*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap');
+
+body {
+    font-family: 'Sulphur Point', sans-serif;
+    background-color: #dbfad1;
+	margin:10px;
+}
+
+main {
+    background-color: #FFFAF2;
+    padding:15px;
+    margin:5px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main p, main h2, main h3, main form {
+    width: 80ch;
+}
+
+
+header {
+    padding-top: 70px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo {
+    width: 8em;
+    margin-bottom:-5%;
+}
+
+nav {
+    background-color: #b9f0a8;
+    width: 95%;
+    border: 4px solid #62470F;
+	margin:5px;
+    position: fixed; 
+    top: 0%;
+}
+
+img#meni_ikona {
+    width:48px;
+    margin-top:-3px;
+}
+
+img.ikonica {
+    width:20px;
+}
+
+nav#meni {
+    display:none;
+}
+
+nav > ul > li > a {
+        color: black;
+        font-size: 16pt;
+        font-variant: small-caps;
+        font-family: 'Trebuchet MS', sans-serif;
+        display: block;
+        margin: 0;
+        padding: 10px 1em;
+        text-decoration: none;
+        text-align:center;
+    }
+
+nav > ul {
+        list-style-type: none;
+        margin: 0 0 0 -40px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+a:visited {
+    color: black;
+}
+
+nav > ul > li > a:hover {
+    background-color: #b88f61;
+    color: black;
+    transition-property: background-color;
+    transition-duration: 800ms;
+}
+
+nav .aktiven {
+    background-color: #2c531f;
+    color: white;
+}
+
+header h1 {
+    font-size: 26pt;
+    text-align: center;
+    font-variant: small-caps;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+h2 {
+    font-size: 16pt;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #21570f;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+
+.poudarek {
+    background-color: #FF9D9E;
+    text-decoration: underline;
+    padding: 10px 0px 10px 0px;
+}
+
+form {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    display: grid;
+    padding: 1.5%;
+   align-items: center;
+}
+
+form#prijava {
+    grid-template-columns: 180px 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap:15px;
+}
+
+form#vclanitev {
+    grid-template-columns: 90px 1fr;
+    grid-template-rows: auto 1fr 30px 1fr 30px 1fr 30px 0.8fr 1fr 1fr 1fr;
+}
+
+.labelIzbira, #vclanitev button, #vclanitev select  {
+    grid-column: 1 / 3;
+    text-align: center;
+}
+
+#vclanitev span {
+    grid-column: 2;
+    align-self: start;
+}
+#vclanitev select {
+    align-self: start;
+}
+
+input {
+    border: 1px solid #707070;
+    padding:9px;
+}
+
+button {
+    border: solid black 1px;
+    width: 110px;
+    background-color: #adebad;
+    padding: 5px;
+    font-size: 11pt;
+    margin-bottom:10px;
+}
+
+.pocisti {
+    background-color: #b88f61;
+}
+
+footer {
+    text-align: center;
+    font-size: 9pt;
+    padding:10px;
+}
+
+.slika1 {
+    width:22%;
+    margin-right: 3%;
+    margin-bottom: 20px;
+}
+
+.slike {
+    flex-basis:100%;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.seznamStoritev {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+
+#aktivnosti {
+    width:100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size:10pt;
+}
+
+
+thead {
+    background-color: #b88f61;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: #caf4be;
+   }
+
+tbody > tr:nth-child(even) {
+    background-color: #edfbe9;
+   }
+   thead th:nth-child(1) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 18%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 18%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 34%;
+  }
+
+   th, td {
+    padding: 10px 0px;
+    text-align: center;
+   }
+
+   select {
+    margin-left: 10px;
+    font-size: 12pt;
+   }
+
+   .pokaziIzpis {
+    border: 2px red solid;
+    text-align: center;
+   }
+
+   input:valid {
+    background-color: #A7F8A0;
+   }
+   input:invalid {
+    background-color:#CF6161;
+   }
+   
+   input:valid+span::after {
+    content:  "\02705";
+  }
+  
+  #geslo:invalid+span::after {
+    content:  "\0274CGeslo mora biti dolgo 6-24 znakov.";
+    font-size:smaller;
+  }
+  #enaslov:invalid+span::after {
+    content:  "\0274CVnesite veljaven e-naslov.";
+    font-size:smaller;
+  }
+  #ime:invalid+span::after {
+    content:  "\0274CVnesite svoje ime.";
+    font-size:smaller;
+  }
+  .skrit {
+    opacity: 0;
+    height:0;
+  }
+  .pokaziZahvalo {
+    border: 2px red solid;
+    padding-left:2%;
+    opacity: 100;
+    transition-property: opacity;
+    transition-delay: 0.5s;
+    transition-duration: 3s;
+    display:block;
+    width:min(80ch, 100%);
+  }
+
+ 
+
+  #aktivnosti1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #aktivnosti1 table {
+    width:30%;
+    height: 300px;
+    margin: 1.5%;
+    border:#62470F 2px solid;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  #aktivnosti1 table tr td, #aktivnosti1 table tr th {
+    padding: 3%;
+    border:#62470F 2px solid;
+  }
+
+  #aktivnosti1 table tr th {
+    background-color: #FF9D9E;
+  }
+
+  @media (min-width: 601px) and (max-width: 768px){
+    .slika1 {
+        width:42%;
+        margin-right: 2%;
+        margin-bottom: 20px;
+    }
+
+    .seznamStoritev {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        
+    }
+
+    nav {
+        width: 96%;
+        margin:5px;
+    }
+    nav > ul > li > a {
+        font-size: 15pt;
+    }
+
+    #aktivnosti1 table {
+        width:45%;
+        margin: 1.5%;
+        margin-bottom: 40px;
+      }
+
+      header h1 {
+        font-size: 24pt;
+      }
+
+      .logo {
+        width: 8em;
+        margin-bottom:-16px;
+    }
+    
+    
+ }
+   
+   
+@media (max-width: 600px) {
+    #aktivnosti > thead {
+    display: none;
+    }
+    #aktivnosti tr {
+    display: flex;
+    flex-direction: column;
+   }
+   #aktivnosti td {
+    display: flex;
+   }
+   #aktivnosti td::before {
+    content: attr(oznaka);
+    font-weight: bold;
+    width: 120px;
+    display: inline-block;
+    flex-shrink: 0;
+   }
+   th, td {
+    padding: 6px 0px;
+   }
+
+   nav > ul {
+    flex-direction: column;
+}
+nav > ul > li > a { 
+    width:100%;
+    padding:5px;
+}
+
+header h1 {
+    font-size:20pt;
+}
+header {
+    padding-top: 50px;
+}
+
+.slika1 {
+    width:80%;
+    margin:0;
+    margin-bottom: 20px;
+}
+
+form#prijava {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 0;
+}
+
+form#vclanitev {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(13,1fr);
+}
+
+button {
+    justify-self: center;
+}
+
+.labelIzbira, #vclanitev button, #vclanitev select  {
+    grid-column: 1;
+}
+
+#vclanitev span {
+    grid-column: 1;
+}
+
+#glavni_meni {
+    display:none;
+    top:40px;
+    border: none;
+    width: 100%;
+}
+
+nav#meni {
+    border:0;
+    border-bottom: 3px solid #62470F;
+    display:block;
+    background-color: #b9f0a8;
+    height:45px;
+    position: fixed;
+  top: -5px;
+  width:100%;
+}
+
+.seznamStoritev {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+#aktivnosti1 table {
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    
+  }
+   
+}
+
+   
+   

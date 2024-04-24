@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <title>Aktivnost</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../drustvo.css">
+    <link rel="icon" href="../slike/logo1.png">
+    <script src="../dogodki.js"></script>
+</head>
+
+<body>
+    <header>
+        
+            <a href="index.html"><img src="../slike/logo2.png" alt="logo" class="logo"></a>
+        
+        <h1>Salon za nego malih živali Šapice</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="prijava.html">Prijava</a></li>
+                <li><a href="aktivnost.html"  class="aktiven">Aktivnost</a></li>
+                <li><a href="vclanitev.html">Včlanitev v klub</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <h2>Naše storitve</h2>
+        <h3>Naš salon vam ponuja naslednje storitve:</h3>
+        <div class="seznamStoritev">
+        <ul>
+            <li>krtačenje,</li>
+            <li>kopanje in sušenje,</li>
+            <li>striženje,</li>
+        </ul>
+
+        <ul>
+            <li>trimanje,</li>
+            <li>nega tačk, blazinic,</li>
+            <li>celotna nega,</li>
+        </ul>
+
+        <ul>
+            <li>nega okolice oči,</li>
+            <li>sluhovodov,</li>
+            <li>čiščenje ušes,</li>
+        </ul>
+
+        <ul>
+            <li>tretma proti zajedavcem,</li>
+            <li>veterinarstvo,</li>
+            <li>svetovanje.</li>
+
+        </ul></div>
+        <h2 class="poudarek">Ob prvem obisku brezplačen posvet z veterinarjem! &#128054;</h2>
+        <p>
+            Strankam se lahko ugodi njenim željam in se živali postrižejo ali uredijo po njihovih izbiri.
+            Uporabljamo naravne, živalim prijazne izdelke, na voljo vam je tudi veterinarsko svetovanje v primeru bolezni ali težav.
+            Pohvalimo se lahko z odlično podkovanim osebjem, ki zagotavlja kakovostne storitve.
+        </p>
+
+        <h2>Urnik aktivnosti</h2>
+        
+       <table id="aktivnosti">
+        <thead>
+            <tr>
+                <th>Aktivnost</th>
+                <th>Datum</th>
+                <th>Prostor</th>
+                <th>Opis</th>
+            </tr>
+        </thead>
+        <tbody id="tabela"> 
+        </tbody>
+       </table>
+
+       
+
+    </main>
+
+        <aside>
+        </aside>
+
+
+        <footer>
+            © 2023 Salon za male živali Šapice 
+        </footer>
+
+<script>
+
+let teloTabele = document.getElementById("tabela");
+
+function dodaj() {
+    dogodki.forEach(
+(el) => {
+    let novaVrstica = `<tr><td>${el.ime}</td>
+                        <td>${el.datumi}</td>
+                        <td>${el.prostor}</td>
+                        <td>${el.opis}</td></tr>`;
+    let novaV = document.createElement("tr");
+    teloTabele.appendChild(novaV);
+    novaV.outerHTML = novaVrstica;
+    });
+};
+
+dodaj();
+</script>
+</body>
+</html>

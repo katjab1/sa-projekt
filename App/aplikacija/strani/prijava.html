@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <title>Prijava</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../drustvo.css">
+    <link rel="icon" href="../slike/logo1.png">
+</head>
+
+<body>
+    <header>
+        
+            <a href="index.html"><img src="../slike/logo2.png" alt="logo" class="logo"></a>
+        
+        <h1>Salon za nego malih živali Šapice</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="prijava.html"  class="aktiven">Prijava</a></li>
+                <li><a href="aktivnost.html">Aktivnost</a></li>
+                <li><a href="vclanitev.html">Včlanitev v klub</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <h2>Prijava za člane</h2>
+        <section id="izpis"></section>
+        <form id="prijava">
+                <label for="enaslov">Elektronski naslov: </label>
+                <input id="enaslov" name="enaslovUp" type="email" required> 
+            
+                <label for="geslo">Geslo: </label>
+                <input id="geslo" name="gesloUp" type="password" required>
+           
+                <button id="gumbPrijava">Prijavi se</button>
+        </form>
+        
+    </main>
+
+        <aside>
+        </aside>
+
+
+        <footer>
+            © 2023 Salon za male živali Šapice
+        </footer>
+
+        <script>
+            let gumbPrijava = document.getElementById("gumbPrijava");
+            let izpis = document.getElementById("izpis");
+            
+
+            function krmilnikPrijava(event) {
+                event.preventDefault();
+                let enaslovUporabnika = document.getElementById("enaslov").value;
+                let gesloUporabnika = document.getElementById("geslo").value;
+                if(enaslovUporabnika != "" && gesloUporabnika != "") {
+                let vsebina1 = "Stran je v izdelavi."
+                let vsebina = "Dobrodošel / dobrodošla " + enaslovUporabnika;
+                let izpisP = document.createElement("p");
+                let izpisH = document.createElement("h3");
+                izpisP.innerHTML = vsebina1;
+                izpisH.innerHTML = vsebina;
+                izpis.appendChild(izpisH);
+                izpis.appendChild(izpisP);
+                izpis.classList.toggle("pokaziIzpis");
+                }
+           }
+            gumbPrijava.addEventListener('click', krmilnikPrijava);
+            
+        </script>
+</body>
+</html>
