@@ -26,7 +26,7 @@
             <?php 
                 if(!isset($_SESSION["enaslov"])) {
                 ?>
-                <li><a href="index.php">Domov</a></li>
+                <li><a href="../index.php">Domov</a></li>
                 <li><a href="prijava.php">Prijava</a></li>
                 <li><a href="aktivnost.php"  class="aktiven">Aktivnost</a></li>
                 <li><a href="vclanitev.php">Včlanitev v klub</a></li>                
@@ -36,7 +36,7 @@
 else {
 ?>
 
-                <li><a href="index.php">Domov</a></li>
+                <li><a href="../index.php">Domov</a></li>
                 <li><a href="aktivnost.php"  class="aktiven">Aktivnost</a></li> 
                 <li><a href="odjava.php">Odjava  <img src="../slike/izhod.png" width="16px"></a></li>                 
                 <li><a href="../skrbnik.php"><img src="../slike/skrbnik2.png" class="ikonica"></a></li>

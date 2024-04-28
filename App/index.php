@@ -6,9 +6,9 @@ session_start();
 <head>
     <title>Šapice</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../drustvo.css">
-    <link rel="icon" href="../slike/logo1.png">
-    <script src="../skript.js"></script>
+    <link rel="stylesheet" href="drustvo.css">
+    <link rel="icon" href="slike/logo1.png">
+    <script src="skript.js"></script>
 
 </head>
 
@@ -25,19 +25,19 @@ session_start();
                 if(!isset($_SESSION["enaslov"])) {
                 ?>
                 <li><a href="index.php" class="aktiven">Domov</a></li>
-                <li><a href="prijava.php">Prijava</a></li>
-                <li><a href="aktivnost.php">Aktivnost</a></li>
-                <li><a href="vclanitev.php">Včlanitev v klub</a></li>                
-                <li><a href="../skrbnik.php"><img src="../slike/skrbnik2.png" class="ikonica"></a></li>
+                <li><a href="strani/prijava.php">Prijava</a></li>
+                <li><a href="strani/aktivnost.php">Aktivnost</a></li>
+                <li><a href="strani/vclanitev.php">Včlanitev v klub</a></li>                
+                <li><a href="skrbnik.php"><img src="slike/skrbnik2.png" class="ikonica"></a></li>
 <?php
                 }
 else {
 ?>
 
                 <li><a href="index.php" class="aktiven">Domov</a></li>
-                <li><a href="aktivnost.php">Aktivnost</a></li>        
-                <li><a href="odjava.php">Odjava  <img src="../slike/izhod.png" width="16px"></a></li>          
-                <li><a href="../skrbnik.php"><img src="../slike/skrbnik2.png" class="ikonica"></a></li>
+                <li><a href="strani/aktivnost.php">Aktivnost</a></li>        
+                <li><a href="strani/odjava.php">Odjava  <img src="slike/izhod.png" width="16px"></a></li>          
+                <li><a href="skrbnik.php"><img src="slike/skrbnik2.png" class="ikonica"></a></li>
  <?php } ?>
 
 
@@ -70,11 +70,11 @@ else {
         <h2 class="poudarek">Včlanite se v naš klub! &#11088;</h2>
         <p>Nudimo tudi naš klub Ljubitelji Šapic. Članstvo prinaša dodatne ugodnosti, aktivnosti in izobraževanja.</p>
         <div class="slike">
-        <img src="../slike/pes.png" alt="pes" class="slika1">
-        <img src="../slike/tacka.png" alt="tacka" class="slika1">
+        <img src="slike/pes.png" alt="pes" class="slika1">
+        <img src="slike/tacka.png" alt="tacka" class="slika1">
     
-        <img src="../slike/macka.png" alt="macka" class="slika1">
-        <img src="../slike/zajec.png" alt="zajec" class="slika1">
+        <img src="slike/macka.png" alt="macka" class="slika1">
+        <img src="slike/zajec.png" alt="zajec" class="slika1">
         </div>
         
         <h2>Naša načela</h2>
@@ -89,11 +89,11 @@ else {
 
         <h2>Zaposleni</h2>
         <div class="slike">
-        <img src="../slike/ursa.jpg" alt="ursa" class="slika1">
-        <img src="../slike/marko.jpg" alt="marko" class="slika1">
+        <img src="slike/ursa.jpg" alt="ursa" class="slika1">
+        <img src="slike/marko.jpg" alt="marko" class="slika1">
     
-        <img src="../slike/katja.jpg" alt="katja" class="slika1">
-        <img src="../slike/anja.jpg" alt="anja" class="slika1">
+        <img src="slike/katja.jpg" alt="katja" class="slika1">
+        <img src="slike/anja.jpg" alt="anja" class="slika1">
         </div>
         
     </main>

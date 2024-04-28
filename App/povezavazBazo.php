@@ -2,10 +2,10 @@
  function povezi() {
     
     $host = "localhost"; //lokacija strežnika z bazo
-    $db   = "bezjakk"; //ime podatkovne baze
+    $db   = "aktivnosti"; //ime podatkovne baze
 
-    $user = "bezjakk"; 
-    $pass = "zj2aO5Kw";
+    $user = "root"; 
+    $pass = "root";
 
     $charset = "utf8";
     //prvi parameter konstruktorja

@@ -12,13 +12,13 @@
 <body>
     <header>
         
-            <a href="index.php"><img src="../slike/logo2.png" alt="logo" class="logo"></a>
+            <a href="../index.php"><img src="../slike/logo2.png" alt="logo" class="logo"></a>
         
         <h1>Salon za nego malih živali Šapice</h1>
         <nav id="meni"><img src="../slike/meni.png" alt="meni" id="meni_ikona"></nav>
          <nav id="glavni_meni">
             <ul>
-                <li><a href="index.php">Domov</a></li>
+                <li><a href="../index.php">Domov</a></li>
                 <li><a href="prijava.php">Prijava</a></li>
                 <li><a href="aktivnost.php">Aktivnost</a></li>
                 <li><a href="vclanitev.php"  class="aktiven">Včlanitev v klub</a></li>
